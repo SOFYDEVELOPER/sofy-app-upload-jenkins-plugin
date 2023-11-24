@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+    Sofy Jenkins Plugin -- Upload your build at Sofy.ai through your jenkins pipeline
+</div>
