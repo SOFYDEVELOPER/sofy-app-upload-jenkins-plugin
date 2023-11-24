@@ -9,7 +9,7 @@
     </parent>
 
     <groupId>io.jenkins.plugins</groupId>
-    <artifactId>sofy-upload</artifactId>
+    <artifactId>sofy-app-upload</artifactId>
     <version>${revision}-${changelist}</version>
 
     <packaging>hpi</packaging>
@@ -17,7 +17,7 @@
     <properties>
         <changelist>999999-SNAPSHOT</changelist>
 	<revision>1.0.1</revision>
-        <gitHubRepo>jenkinsci/sofy-upload-plugin</gitHubRepo> 
+        <gitHubRepo>jenkinsci/sofy-app-upload-jenkins-plugin</gitHubRepo> 
         <jenkins.version>2.164.3</jenkins.version>
         <java.level>8</java.level> 
         <findbugs.failOnError>false</findbugs.failOnError>
@@ -33,7 +33,7 @@
         </license>
    </licenses>
 
-    <url>https://wiki.jenkins.io/display/JENKINS/Sofy-upload+Plugin</url>
+    <url>https://wiki.jenkins.io/display/JENKINS/sofy-app-upload+Plugin</url>
 
     <scm>
         <connection>scm:git:git://github.com/${gitHubRepo}.git</connection>
