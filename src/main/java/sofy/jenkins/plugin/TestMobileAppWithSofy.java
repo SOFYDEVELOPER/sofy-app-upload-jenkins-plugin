@@ -170,28 +170,6 @@ public class TestMobileAppWithSofy extends Recorder {
             return "Upload application build to Sofy.ai";
         }
 
-
-        public FormValidation doCheckAuthTokenValidity(@QueryParameter("apiToken") final String apiToken) throws AccessDeniedException {
-
-            try {
-                try {
-                    Jenkins.get().checkPermission(Jenkins.ADMINISTER);// or Jenkins.getInstance() on older core baselines
-                } catch (Exception e){
-                    e.printStackTrace();
-                    System.out.println("Access Denied");
-                }
-                if (Util.fixEmptyAndTrim(apiToken) == null) {
-                    return FormValidation.error("Api Token cannot be empty");
-                }
-                return FormValidation.ok("Your API Key is valid");
-
-            } catch (Exception e) {
-                e.printStackTrace();
-                System.out.println("Invalid API Key Entered");
-            }
-
-            return FormValidation.error("Invalid API Key");
-        }
     }
 
 
